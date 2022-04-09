@@ -1324,6 +1324,27 @@ input, select, textarea {
 				overflow: hidden;
 			}
 
+				#header .content .inner h1 {
+					overflow: hidden; 
+  					border-right: .20em solid orange; 
+  					white-space: nowrap; 
+  					margin: 0 auto; 
+  					letter-spacing: .15em;
+  					animation: 
+    					typing 4.0s steps(40, end),
+    					blink-caret .50s step-end infinite;
+				}
+
+				@keyframes typing {
+					from { max-width: 0 }
+					to { max-width: 100% }
+				  }
+
+				  @keyframes blink-caret {
+					from, to { border-color: transparent }
+					50% { border-color: gray; }
+				  }
+
 				#header .content .inner > :last-child {
 					margin-bottom: 0;
 				}
